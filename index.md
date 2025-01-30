@@ -4,7 +4,7 @@
 
 ### Learn About My Projects
 
-#### [Internal Blog Post Project](/bank)
+#### [iFood Insights: Food Delivery Discoveries](/bank)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---

@@ -4,7 +4,7 @@
 
 ### Learn About My Projects
 
-#### [iFood Insights: Food Delivery Discoveries](/iFood Insights.md)
+#### [iFood Insights: Food Delivery Discoveries](/iFood_Insights.md)
 <img src="images/iFood Insights.png?raw=true"/>
 
 ---

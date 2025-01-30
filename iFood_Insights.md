@@ -18,23 +18,23 @@ The data for this project was sourced from an iFood job interview case study. Th
 
 Approximately 67% of the variance in iFood spending can be explained by income level. The following scatterplot visualizes the correlation and was used to calculate the r-squared value (0.6711).
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/Income vs. Total Spent.png?raw=true"/>
 
 For purposes of the analysis, all customers were grouped into four buckets: 24-35, 36-50, 51-65, and 66+. Approximately 42% of the customers are aged 36-50. A mere 9.7% of the customers are 24-35. I expected the customer base to be even younger than it is, but perhaps the younger one is the less disposable income is available for use on services like food delivery.
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/Age Distribution.png?raw=true"/>
 
 Average income among those aged 66+ is $58,361 annually, which is the highest of all groups. Therefore, we’d expect this group to spend the most as predicted by the scatterplot. This holds true on a per capita basis. However, with a higher number of customers in other age groups, their total spending across all categories outpaces those in the 66+ group as revealed in the Spending by Product Type graph below.
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/Average Income by Age Group.png?raw=true"/>
 
 Of the $1,228,184 spent, here is a breakdown of what was spent on each product type. Across all age groups and categories, spending on wine and meat products was the highest. Total spending was highest among those aged 51-65 at $450,502, representing nearly 37% of all spending.
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/Spending by Product Type.png?raw=true"/>
 
 Finally, the following chart reveals marketing campaign 6 had the highest acceptance rate across all customer ages, with ages 36-50 accepting it more than any group. Tactics used in this campaign must have resonated with them.
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/Campaign Effectiveness.png?raw=true"/>
 
 ### 4. Closing Thoughts
 

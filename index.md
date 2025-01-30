@@ -5,7 +5,7 @@
 ### Learn About My Projects
 
 #### [iFood Insights: Food Delivery Discoveries](/bank)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/iFood Insights.png?raw=true"/>
 
 ---
 

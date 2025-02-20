@@ -12,21 +12,37 @@ Before we answer those questions, it's important to understand the WBG's organiz
 
 ### 1. WBG Organizational Structure
 
+<img src="images/WBG Org Structure.png?raw=true"/>
+
 ### 2. About the Dataset 
 
 ### 3. Key Takeaways
-
-<img src="images/Income vs. Total Spent.png?raw=true"/>
 
 ### 4. Detailed Analysis
 
 ### Geographic
 
+<img src="images/Global Debt Proportions.png?raw=true"/>
+
+<img src="images/Top 5 Borrowers.png?raw=true"/>
+
 ### Lending - Loan Agreements and Sizes
+
+<img src="images/Signed Indian Loan Agreements.png?raw=true"/>
+
+<img src="images/Cumulative Principal Amount Borrowed by Year.png?raw=true"/>
 
 ### Lending - Interest Rates and Loan Lengths
 
+<img src="images/Avg. Interest Rate of Indian IDA Debt.png?raw=true"/>
+
+<img src="images/Average Loan Length.png?raw=true"/>
+
 ### 5. Projects
+
+<img src="images/All Projects.png?raw=true"/>
+
+<img src="images/2011 Projects.png?raw=true"/>
 
 ### 6. Closing Thoughts
 

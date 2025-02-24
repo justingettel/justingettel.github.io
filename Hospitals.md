@@ -48,11 +48,26 @@ FROM patient.health GROUP BY Days ORDER BY Days;
 
 Surgical specialties, radiology, and cardiology stand out as the top performers in terms of average procedures. This insight indicates that these areas may simultaneously represent sources of healing and cost for hospitals, warranting further investigation into their efficiency and outcomes.
 
+```SQL
+SELECT DISTINCT(medical_specialty) AS Medical_Specialty, 
+COUNT(num_procedures) AS Count, 
+ROUND(AVG(num_procedures),1) AS Avg_Number_of_Procedures 
+FROM patient.health GROUP BY(Medical_Specialty) HAVING Avg_Number_of_Procedures > 2.5 AND Count > 50 
+ORDER BY Avg_Number_of_Procedures DESC;
+```
+
 <img src="images/2 Hospitals Medical Specialty.png?raw=true"/>
 
 ### Lab Procedures by Race
 
 My findings revealed little variation in the number of lab procedures across different racial demographics, suggesting that hospitals are treating patients fairly in this regard. This was a reassuring outcome and indicates strides towards equitable healthcare.
+
+```SQL
+SELECT DISTINCT(race) AS Race, 
+ROUND(AVG(num_lab_procedures)) AS Avg_Num_Lab_Procedures 
+FROM patient.health JOIN patient.demographics ON patient.health.patient_nbr = patient.demographics.patient_nbr GROUP BY race 
+ORDER BY Avg_Num_Lab_Procedures DESC;
+```
 
 <img src="images/3 Hospitals Race.png?raw=true"/>
 
@@ -60,11 +75,22 @@ My findings revealed little variation in the number of lab procedures across dif
 
 A deeper dive into the data revealed a correlation between the number of lab procedures and the length of hospital stays. This could imply that patients requiring more extensive testing tend to have more complex health issues, which require longer hospital stays.
 
+```SQL
+SELECT ROUND(AVG(time_in_hospital),2) AS "Time in Hospital", 
+CASE WHEN num_lab_procedures >= 0 AND num_lab_procedures < 25 THEN "Few" WHEN num_lab_procedures >= 25 AND num_lab_procedures < 55 THEN "Average" ELSE "Many" END AS Procedure_Frequency 
+FROM patient.health GROUP BY procedure_frequency;
+```
+
 <img src="images/4 Hospitals Correlation.png?raw=true"/>
 
 ### Patient Summary Data 
 
 To summarize the patient data effectively, I created easily readable sentences that combined demographics, medications, and lab procedures. This succinct format allowed for quick insights at a glance, streamlining the understanding of patient profiles.
+
+```SQL
+SELECT CONCAT('Patient ',demographics.patient_nbr,' was ',race,' and ',(CASE WHEN readmitted = 'NO' THEN 'was not readmitted.' ELSE 'was readmitted.' END),' They had ',num_medications,' medications and ',num_lab_procedures,' lab procedures.') AS Summary 
+FROM patient.demographics JOIN patient.health ON patient.demographics.patient_nbr = patient.health.patient_nbr ORDER BY num_medications DESC, num_lab_procedures DESC LIMIT 50;
+```
 
 <img src="images/7 Hospitals Summary.png?raw=true"/>
 

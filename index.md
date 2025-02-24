@@ -2,7 +2,7 @@
 
 ---
 
-#### [Hospitals - An Exploratory SQL Analysis - SQL](/Hospitals.md)
+#### [Hospitals - An Exploratory SQL Analysis](/Hospitals.md)
 <img src="images/Hospitals Cover Photo.png?raw=true"/>
 This project analyzes hospital patient demographic and health data to answer questions about hospital operations and patient outcomes. By reading this article, you’ll discover patterns in hospital stay durations, the performance of various medical specialties, and how race factors into treatment decisions.
 

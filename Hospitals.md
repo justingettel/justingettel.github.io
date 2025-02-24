@@ -35,6 +35,13 @@ One of the most surprising aspects of the process was how well SQL helped me con
 
 The histogram visualizes the distribution of hospital stays. As observed, about 48% of patients stay between one and three days, while 85% stay for a week or less. This suggests that many patients receive prompt care, but it also raises questions about those who stay longer—what complexities do they face?
 
+```SQL
+SELECT ROUND(time_in_hospital,1) AS Days, 
+COUNT(*) AS Count, 
+RPAD("",COUNT(*)/100,"*") AS Bar 
+FROM patient.health GROUP BY Days ORDER BY Days;
+```
+
 <img src="images/1 Hospitals Histogram.png?raw=true"/>
 
 ### Procedures by Medical Specialty

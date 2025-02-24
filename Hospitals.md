@@ -33,6 +33,6 @@ One of the most surprising aspects of the process was how well SQL helped me con
 
 Hospital Stay Duration Histogram
 
-The histogram visualizes the distribution of hospital stays. As observed, about 48% of patients stay between one and three days, while 85% stay for a week or less. This suggests that many patients receive prompt care, but it also raises questions about those who stay longer—what complexities do they face? 
+The histogram visualizes the distribution of hospital stays. As observed, about 48% of patients stay between one and three days, while 85% stay for a week or less. This suggests that many patients receive prompt care, but it also raises questions about those who stay longer—what complexities do they face?
 
-<img src="images/WBG Org Structure.png?raw=true"/>
+<img src="images/Hospitals Histogram.png?raw=true"/>

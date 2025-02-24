@@ -35,4 +35,4 @@ Hospital Stay Duration Histogram
 
 The histogram visualizes the distribution of hospital stays. As observed, about 48% of patients stay between one and three days, while 85% stay for a week or less. This suggests that many patients receive prompt care, but it also raises questions about those who stay longer—what complexities do they face?
 
-<img src="images/Hospitals Histogram.png?raw=true"/>
+<img src="images/1 Hospitals Histogram.png?raw=true"/>

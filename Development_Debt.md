@@ -88,9 +88,15 @@ This logic/pattern was followed for the analysis: query India-focused data from 
 
 Step 1 – Obtain global debt proportions to decide which country to focus the analysis on:
 
+```SQL
 SELECT DISTINCT("Country / Economy"), SUM("Due to IDA (US$)") AS "Due to IDA (US$)" FROM banking_data GROUP BY "Country / Economy" ORDER BY "Due to IDA (US$)" DESC;
+```
 
 Step 2 – Select all columns where India is a country:
+
+```SQL
+SELECT * FROM banking_data WHERE "Country / Economy" = 'India';
+```
 
 SELECT * FROM banking_data WHERE "Country / Economy" = 'India';
 
@@ -98,6 +104,8 @@ Step 3 – Transfer step 2 data to Excel and use pivot tables and charts to gene
 
 Step 4 – One more query to pull project names for India specifically:
 
+```SQL
 SELECT YEAR("Agreement Signing Date") AS 'Agreement Signing Date Year', "Project Name" FROM banking_data WHERE "Country / Economy" = 'India';
+```
 
 Step 5 – Use ChatGPT to quickly produce a word cloud from the project name data sourced in the prior step.
